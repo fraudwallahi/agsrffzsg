@@ -1,5 +1,5 @@
 print("loading")
-task.wait(10)
+task.wait(9)
 
 local char = game.Players.LocalPlayer.Character
 local plr = game.Players.LocalPlayer
